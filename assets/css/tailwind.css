@@ -1,0 +1,124 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+
+   .border-dashed-top {
+      border-top: dashed 1px #b9b9b9;
+   }
+
+   .border-selected-tab {
+      border-top: solid 1px #ebb02e;
+   }
+
+   input:checked~.dot {
+      transform: translateX(100%);
+      background-color: #48bb78;
+   }
+
+   .transform-fix {
+      transform: translate(-50%, -50%);
+   }
+
+   /* Begin::Before And After in breadcrumb */
+   .breadcrumb-items::before {
+      transform: rotate(-35deg);
+      transform-origin: bottom;
+      bottom: -7px;
+   }
+
+   .breadcrumb-items::after {
+      top: -7px;
+      transform: rotate(35deg);
+      transform-origin: top;
+   }
+
+   /* End::Before And After in breadcrumb */
+   .background-custome {
+      background: linear-gradient(324deg, rgba(178, 164, 200, 1) 0%, rgba(169, 135, 214, 1) 100%);
+   }
+
+   .inverted-border-radius {
+      position: relative;
+      border-radius: 0px 25px 25px 0;
+   }
+   .inverted-border-radius::before {
+      content: "";
+      position: absolute;
+
+      background-color: transparent;
+      bottom: -50px;
+      left: 0;
+      height: 50px;
+      width: 25px;
+      border-top-left-radius: 25px;
+      box-shadow: 0 -25px 0 0 #111827;
+   }
+
+   .inverted-border-radius::after {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      top: -50px;
+      left: 0;
+      height: 50px;
+      width: 25px;
+      border-bottom-left-radius: 25px;
+      box-shadow: 0 25px 0 0 #111827;
+   }
+
+   .inverted-border-radius-white {
+      position: relative;
+      border-radius: 0px 25px 25px 0;
+   }
+   .inverted-border-radius-white::before {
+      content: "";
+      position: absolute;
+      z-index: 100;
+      background-color: transparent;
+      bottom: -50px;
+      left: 0;
+      height: 50px;
+      width: 25px;
+      border-top-left-radius: 25px;
+      box-shadow: 0 -25px 0 0 #F3F4F6;
+   }
+   .inverted-border-radius-white::after {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      top: -50px;
+      left: 0;
+      height: 50px;
+      width: 25px;
+      z-index: 100;
+      border-bottom-left-radius: 25px;
+      box-shadow: 0 25px 0 0 #F3F4F6;
+   }
+   .show-more-cover{
+      backdrop-filter: blur(10px);
+   }
+   .back-blur{
+      backdrop-filter: blur(10px);
+   }
+   .header{
+      backdrop-filter: blur(8px);
+   }
+   .transform-popup {
+      transform: translate(-50%, 0%);
+   }
+   .pop-blur{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      transition: .2s;
+      backdrop-filter: blur(8px);
+   }
+}

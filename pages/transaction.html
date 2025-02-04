@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="../">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.css" />
+    <link rel="stylesheet" href="assets/css/fontiran.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>دوره های من - دوکوهه</title>
+</head>
+
+<body dir="rtl"
+    class="font-[dana] p-6 gap-3 overflow-x-hidden flex flex-col lg:flex-row bg-[#F3F4F6] dark:bg-[#111827] dark:text-white">
+    <!-- Header for Mobile -->
+    <header class="fixed inset-0 w-full">
+        <div
+            class="mbile-header p-3 lg:hidden bg-[#e6e6e6] dark:bg-[#242a38] h-[90px] w-full flex justify-between items-center">
+            <button
+                class="menu-btn border-none w-50px h-50px p-3 flex flex-col items-center justify-center rounded-full bg-[#ffffffdd] dark:bg-[#ffffff0d]">
+                <span class="bg-black dark:bg-white block w-[20px] h-[2px]"></span>
+                <span class="bg-black dark:bg-white my-1 block w-[20px] h-[2px]"></span>
+                <span class="bg-black dark:bg-white block w-[20px] h-[2px]"></span>
+            </button>
+            <div class="bg-[#1313137a] menu-cover fixed z-10 w-full h-0 transition-all ease-in-out left-0 right-0">
+            </div>
+            <div
+                class="panel-mobile overflow-scroll w-[280px] transition-all ease-in-out left-0 right-[-280px] h-full fixed z-20 px-3 bg-[#e6e6e6] dark:bg-[#242a38]">
+                <div class="parent-panel grid grid-cols-1 gap-y-3 divide-y">
+                    <div class="logo-and-close flex items-center justify-between">
+                        <img class="w-[100px]" src="assets/img/NewLogo 1.png" alt="SEO" />
+                        <div class="flex gap-2">
+                            <div
+                                class="theme w-[50px] h-[50px] flex items-center justify-center p-3 rounded-full bg-[#868686] dark:bg-[#ffffff0d]">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.02804 11.4222C1.39976 16.5709 5.912 20.7598 11.3122 20.9897C15.1223 21.1497 18.5297 19.4301 20.5742 16.7208C21.4209 15.6111 20.9665 14.8713 19.552 15.1212C18.8601 15.2412 18.1477 15.2912 17.4043 15.2612C12.3551 15.0612 8.2249 10.9723 8.20425 6.14353C8.19393 4.84386 8.47271 3.61417 8.97866 2.49446C9.53624 1.25478 8.86508 0.66493 7.5744 1.19479C3.48551 2.86437 0.687303 6.85334 1.02804 11.4222Z"
+                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div
+                                class="close w-[50px] h-[50px] flex items-center justify-center p-3 rounded-full bg-[#868686] dark:bg-[#ffffff0d]">
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                    viewBox="0 0 12 12">
+                                    <path fill="#000" fill-opacity="1" fill-rule="nonzero" stroke="#fff"
+                                        d="m6 5.293 4.789-4.79.707.708-4.79 4.79 4.79 4.789-.707.707-4.79-4.79-4.789 4.79-.707-.707L5.293 6 .502 1.211 1.21.504 6 5.294z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="w-full h-[1px] bg-[#ffffff1a] my-2"></span>
+                    <div
+                        class="search-box bg-[#F3F4F6] dark:bg-[#FFFFFF0D] flex p-1.5 border-l-[1px] border-[#64748B] items-center gap-2 width-[300px] rounded-[15px]">
+                        <button class="bg-[transparent] border-none w-[30px]" type="submit">
+                            <img class="w-full pl-1" src="assets/img/search-icon.svg" alt="SEO" />
+                        </button>
+                        <input
+                            class="border-[0] bg-[transparent] dark:text-white focus:outline-none font-[dana] w-auto p-1"
+                            placeholder="دنبال چه دوره ای هستی؟" type="text" />
+                    </div>
+                    <ul class="flex flex-col gap-4 mt-5">
+                        <a class="no-underline list-none dark:text-white text-[#3f3f3f]" href="">
+                            <li class="flex gap-2 font-medium text-[16px] flex-row-reverse justify-end">پیشخوان
+                                <svg class="dark:stroke-white stroke-[#3C3C3C]" width="26" height="26"
+                                    viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.6864 1.76339L2.37163 8.42236C1.43577 9.16625 0.835858 10.7381 1.03983 11.9139L2.63559 21.4644C2.92355 23.1681 4.55529 24.5479 6.28303 24.5479H19.721C21.4368 24.5479 23.0805 23.1561 23.3685 21.4644L24.9642 11.9139C25.1562 10.7381 24.5563 9.16625 23.6324 8.42236L15.3177 1.7754C14.0339 0.743551 11.9582 0.743539 10.6864 1.76339Z"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M12.9995 16.9773C14.6562 16.9773 15.9991 15.6344 15.9991 13.9778C15.9991 12.3212 14.6562 10.9782 12.9995 10.9782C11.3429 10.9782 10 12.3212 10 13.9778C10 15.6344 11.3429 16.9773 12.9995 16.9773Z"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                        </a>
+                        <a class="no-underline list-none dark:text-white text-[#3f3f3f]" href="">
+                            <li class="flex gap-2 font-medium text-[16px] flex-row-reverse justify-end">دوره های من
+                                <svg class="dark:stroke-white stroke-[#3C3C3C]" width="26" height="27"
+                                    viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.9787 16.2021L24.4832 22.3967C24.2973 24.2923 24.1487 25.7419 20.7911 25.7419H5.20536C1.84785 25.7419 1.69918 24.2923 1.51334 22.3967L1.01776 16.2021C0.918648 15.1738 1.24077 14.2198 1.82307 13.4888C1.83546 13.4764 1.83546 13.4764 1.84785 13.464C2.52926 12.6339 3.55758 12.1136 4.70978 12.1136H21.2867C22.4389 12.1136 23.4549 12.6339 24.1239 13.4392C24.1363 13.4516 24.1487 13.464 24.1487 13.4764C24.7557 14.2074 25.0902 15.1614 24.9787 16.2021Z"
+                                        stroke-width="2" stroke-miterlimit="10" />
+                                    <path
+                                        d="M2.46875 12.646V6.26547C2.46875 2.05309 3.52184 1 7.73422 1H9.30767C10.8811 1 11.2404 1.47079 11.8351 2.26371L13.4085 4.3699C13.805 4.89025 14.0404 5.21237 15.0935 5.21237H18.2528C22.4651 5.21237 23.5182 6.26547 23.5182 10.4778V12.6955"
+                                        stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9.8125 19.5472H16.1806" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                        </a>
+                        <a class="no-underline list-none dark:text-white text-[#3f3f3f]" href="">
+                            <li class="flex gap-2 font-medium text-[16px] flex-row-reverse justify-end">تکیت ها
+                                <svg class="dark:stroke-white stroke-[#3C3C3C]" width="28" height="29"
+                                    viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.7928 12.4373V17.642C21.7928 17.9803 21.7798 18.3056 21.7407 18.6179C21.4415 22.131 19.3726 23.8746 15.5602 23.8746H15.0397C14.7144 23.8746 14.4021 24.0307 14.2069 24.291L12.6455 26.3729C11.9559 27.2967 10.8369 27.2967 10.1473 26.3729L8.58583 24.291C8.41668 24.0698 8.03936 23.8746 7.7531 23.8746H7.23264C3.08189 23.8746 1 22.8467 1 17.642V12.4373C1 8.62485 2.7566 6.55598 6.25676 6.25671C6.56904 6.21767 6.89433 6.20465 7.23264 6.20465H15.5602C19.7109 6.20465 21.7928 8.28654 21.7928 12.4373Z"
+                                        stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M26.9985 7.23264V12.4373C26.9985 16.2628 25.2419 18.3187 21.7418 18.6179C21.7808 18.3056 21.7938 17.9803 21.7938 17.642V12.4373C21.7938 8.28659 19.712 6.2047 15.5612 6.2047H7.23369C6.89539 6.2047 6.57009 6.21772 6.25781 6.25676C6.55708 2.7566 8.62595 1 12.4384 1H20.7659C24.9167 1 26.9985 3.08189 26.9985 7.23264Z"
+                                        stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M15.7268 15.7334H15.7385" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.4104 15.6381H11.4221" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M6.85176 15.6381H6.86347" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                        </a>
+                        <a class="no-underline list-none dark:text-white text-[#3f3f3f]" href="">
+                            <li class="flex gap-2 font-medium text-[16px] flex-row-reverse justify-end">پرداخت ها
+                                <svg class="dark:stroke-white stroke-[#3C3C3C]" width="26" height="26"
+                                    viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.5944 14.7655C19.0919 15.2561 18.8047 15.9621 18.8765 16.7159C18.9842 18.0082 20.1688 18.9535 21.461 18.9535H23.7345V20.3774C23.7345 22.8542 21.7123 24.8764 19.2355 24.8764H5.49904C3.02217 24.8764 1 22.8542 1 20.3774V12.3246C1 9.84775 3.02217 7.82556 5.49904 7.82556H19.2355C21.7123 7.82556 23.7345 9.84775 23.7345 12.3246V14.0476H21.3175C20.6474 14.0476 20.0371 14.3109 19.5944 14.7655Z"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M1 13.4015V7.93336C1 6.50946 1.87348 5.24107 3.20166 4.73851L12.7023 1.14886C14.186 0.586479 15.7774 1.68734 15.7774 3.27876V7.82564"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M25.0005 15.2683V17.7333C25.0005 18.3914 24.4741 18.9298 23.804 18.9537H21.4588C20.1665 18.9537 18.9819 18.0084 18.8742 16.7161C18.8024 15.9623 19.0896 15.2563 19.5921 14.7658C20.0349 14.3111 20.6451 14.0479 21.3152 14.0479H23.804C24.4741 14.0718 25.0005 14.6102 25.0005 15.2683Z"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M6.38672 12.9109H14.7626" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                        </a>
+                        <a class="no-underline list-none dark:text-white text-[#3f3f3f]" href="">
+                            <li class="flex gap-2 font-medium text-[16px] flex-row-reverse justify-end">جزئیات حساب
+                                <svg class="dark:stroke-white stroke-[#3C3C3C]" width="26" height="26"
+                                    viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3649 24.5437C19.3089 24.8557 18.0609 24.9997 16.5969 24.9997H9.39691C7.93291 24.9997 6.68491 24.8557 5.62891 24.5437C5.89291 21.4237 9.09691 18.9636 12.9969 18.9636C16.8969 18.9636 20.1009 21.4237 20.3649 24.5437Z"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M16.6 1H9.4C3.4 1 1 3.40003 1 9.4001V16.6002C1 21.1362 2.368 23.6203 5.632 24.5443C5.896 21.4242 9.1 18.9642 13 18.9642C16.9 18.9642 20.104 21.4242 20.368 24.5443C23.632 23.6203 25 21.1362 25 16.6002V9.4001C25 3.40003 22.6 1 16.6 1ZM13 15.6042C10.624 15.6042 8.704 13.6722 8.704 11.2961C8.704 8.92012 10.624 7.00007 13 7.00007C15.376 7.00007 17.296 8.92012 17.296 11.2961C17.296 13.6722 15.376 15.6042 13 15.6042Z"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M17.2951 11.2961C17.2951 13.6721 15.3751 15.6041 12.9991 15.6041C10.6231 15.6041 8.70312 13.6721 8.70312 11.2961C8.70312 8.92004 10.6231 7 12.9991 7C15.3751 7 17.2951 8.92004 17.2951 11.2961Z"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                        </a>
+                        <a class="no-underline list-none dark:text-white text-[#3f3f3f]" href="">
+                            <li class="flex gap-2 font-medium text-[16px] flex-row-reverse justify-end">خروج از حساب
+                                <svg class="dark:stroke-white stroke-[#3C3C3C]" width="26" height="26"
+                                    viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.2148 16.6947L24.9981 12.9114L21.2148 9.12817" stroke-width="2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.86719 12.9107H24.8967" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M12.8227 24.6453C6.29064 24.6453 1 20.2118 1 12.8227C1 5.4335 6.29064 1 12.8227 1"
+                                        stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo-mobile w-[100px]">
+                <img class="w-full" src="assets/img/NewLogo 1.png" alt="SEO" />
+            </div>
+        </div>
+    </header>
+    <!-- side bar -->
+    <nav class="hidden opacity-100 relative z-30 lg:flex justify-center h-screen flex-col w-1/4">
+        <div class="flex flex-col">
+            <div class="flex justify-center">
+                <img src="assets/img/IMG_20240407_142507_618_11zon (2) 2 1.png" alt="SEO">
+            </div>
+            <div
+                class="menu-box bg-[#512B820D] rounded-[25px_50px_50px_50px] flex-col flex justify-start items-stretch gap-3">
+                <ul dir="ltr" class="flex flex-col">
+                    <div class="w-full h-[48px]"></div>
+                    <a class="flex items-center no-underline flex-row-reverse  dark:text-white p-5 w-[90%] h-full"
+                        href="#">
+                        <li class="flex gap-2 flex-row-reverse">
+                            <svg class="dark:stroke-white stroke-[#3C3C3C]" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.6864 1.76339L2.37163 8.42236C1.43577 9.16625 0.835858 10.7381 1.03983 11.9139L2.63559 21.4644C2.92355 23.1681 4.55529 24.5479 6.28303 24.5479H19.721C21.4368 24.5479 23.0805 23.1561 23.3685 21.4644L24.9642 11.9139C25.1562 10.7381 24.5563 9.16625 23.6324 8.42236L15.3177 1.7754C14.0339 0.743551 11.9582 0.743539 10.6864 1.76339Z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M12.9995 16.9773C14.6562 16.9773 15.9991 15.6344 15.9991 13.9778C15.9991 12.3212 14.6562 10.9782 12.9995 10.9782C11.3429 10.9782 10 12.3212 10 13.9778C10 15.6344 11.3429 16.9773 12.9995 16.9773Z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>پیشخوان
+                        </li>
+                    </a>
+                    <a class="flex items-center no-underline flex-row-reverse  dark:text-white p-5 w-[90%] h-full"
+                        href="#">
+                        <li class="flex gap-2 flex-row-reverse">
+                            <svg class="dark:stroke-white stroke-[#3C3C3C]" width="26" height="27" viewBox="0 0 26 27"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.9787 16.2021L24.4832 22.3967C24.2973 24.2923 24.1487 25.7419 20.7911 25.7419H5.20536C1.84785 25.7419 1.69918 24.2923 1.51334 22.3967L1.01776 16.2021C0.918648 15.1738 1.24077 14.2198 1.82307 13.4888C1.83546 13.4764 1.83546 13.4764 1.84785 13.464C2.52926 12.6339 3.55758 12.1136 4.70978 12.1136H21.2867C22.4389 12.1136 23.4549 12.6339 24.1239 13.4392C24.1363 13.4516 24.1487 13.464 24.1487 13.4764C24.7557 14.2074 25.0902 15.1614 24.9787 16.2021Z"
+                                    stroke-width="2" stroke-miterlimit="10" />
+                                <path
+                                    d="M2.46875 12.646V6.26547C2.46875 2.05309 3.52184 1 7.73422 1H9.30767C10.8811 1 11.2404 1.47079 11.8351 2.26371L13.4085 4.3699C13.805 4.89025 14.0404 5.21237 15.0935 5.21237H18.2528C22.4651 5.21237 23.5182 6.26547 23.5182 10.4778V12.6955"
+                                    stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9.8125 19.5472H16.1806" stroke-width="2" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>دوره های من
+                        </li>
+                    </a>
+                    <a class="flex items-center no-underline flex-row-reverse  dark:text-white p-5 w-[90%] h-full"
+                        href="#">
+                        <li class="flex gap-2 flex-row-reverse">
+                            <svg class="dark:stroke-white stroke-[#3C3C3C]" width="28" height="29" viewBox="0 0 28 29"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.7928 12.4373V17.642C21.7928 17.9803 21.7798 18.3056 21.7407 18.6179C21.4415 22.131 19.3726 23.8746 15.5602 23.8746H15.0397C14.7144 23.8746 14.4021 24.0307 14.2069 24.291L12.6455 26.3729C11.9559 27.2967 10.8369 27.2967 10.1473 26.3729L8.58583 24.291C8.41668 24.0698 8.03936 23.8746 7.7531 23.8746H7.23264C3.08189 23.8746 1 22.8467 1 17.642V12.4373C1 8.62485 2.7566 6.55598 6.25676 6.25671C6.56904 6.21767 6.89433 6.20465 7.23264 6.20465H15.5602C19.7109 6.20465 21.7928 8.28654 21.7928 12.4373Z"
+                                    stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M26.9985 7.23264V12.4373C26.9985 16.2628 25.2419 18.3187 21.7418 18.6179C21.7808 18.3056 21.7938 17.9803 21.7938 17.642V12.4373C21.7938 8.28659 19.712 6.2047 15.5612 6.2047H7.23369C6.89539 6.2047 6.57009 6.21772 6.25781 6.25676C6.55708 2.7566 8.62595 1 12.4384 1H20.7659C24.9167 1 26.9985 3.08189 26.9985 7.23264Z"
+                                    stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M15.7268 15.7334H15.7385" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.4104 15.6381H11.4221" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6.85176 15.6381H6.86347" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>تیکت ها
+                        </li>
+                    </a>
+                    <a class="flex items-center no-underline flex-row-reverse inverted-border-radius-white dark:inverted-border-radius bg-[#F3F4F6] dark:bg-[#111827] dark:text-white p-5 w-[90%] h-full"
+                        href="#">
+                        <li class="flex gap-2 flex-row-reverse">
+                            <svg class="dark:stroke-white stroke-[#3C3C3C]" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5944 14.7655C19.0919 15.2561 18.8047 15.9621 18.8765 16.7159C18.9842 18.0082 20.1688 18.9535 21.461 18.9535H23.7345V20.3774C23.7345 22.8542 21.7123 24.8764 19.2355 24.8764H5.49904C3.02217 24.8764 1 22.8542 1 20.3774V12.3246C1 9.84775 3.02217 7.82556 5.49904 7.82556H19.2355C21.7123 7.82556 23.7345 9.84775 23.7345 12.3246V14.0476H21.3175C20.6474 14.0476 20.0371 14.3109 19.5944 14.7655Z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M1 13.4015V7.93336C1 6.50946 1.87348 5.24107 3.20166 4.73851L12.7023 1.14886C14.186 0.586479 15.7774 1.68734 15.7774 3.27876V7.82564"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M25.0005 15.2683V17.7333C25.0005 18.3914 24.4741 18.9298 23.804 18.9537H21.4588C20.1665 18.9537 18.9819 18.0084 18.8742 16.7161C18.8024 15.9623 19.0896 15.2563 19.5921 14.7658C20.0349 14.3111 20.6451 14.0479 21.3152 14.0479H23.804C24.4741 14.0718 25.0005 14.6102 25.0005 15.2683Z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.38672 12.9109H14.7626" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>پرداخت ها
+                        </li>
+                    </a>
+                    <a class="flex items-center no-underline flex-row-reverse  dark:text-white p-5 w-[90%] h-full"
+                        href="#">
+                        <li class="flex gap-2 flex-row-reverse">
+                            <svg class="dark:stroke-white stroke-[#3C3C3C]" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.3649 24.5437C19.3089 24.8557 18.0609 24.9997 16.5969 24.9997H9.39691C7.93291 24.9997 6.68491 24.8557 5.62891 24.5437C5.89291 21.4237 9.09691 18.9636 12.9969 18.9636C16.8969 18.9636 20.1009 21.4237 20.3649 24.5437Z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M16.6 1H9.4C3.4 1 1 3.40003 1 9.4001V16.6002C1 21.1362 2.368 23.6203 5.632 24.5443C5.896 21.4242 9.1 18.9642 13 18.9642C16.9 18.9642 20.104 21.4242 20.368 24.5443C23.632 23.6203 25 21.1362 25 16.6002V9.4001C25 3.40003 22.6 1 16.6 1ZM13 15.6042C10.624 15.6042 8.704 13.6722 8.704 11.2961C8.704 8.92012 10.624 7.00007 13 7.00007C15.376 7.00007 17.296 8.92012 17.296 11.2961C17.296 13.6722 15.376 15.6042 13 15.6042Z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M17.2951 11.2961C17.2951 13.6721 15.3751 15.6041 12.9991 15.6041C10.6231 15.6041 8.70312 13.6721 8.70312 11.2961C8.70312 8.92004 10.6231 7 12.9991 7C15.3751 7 17.2951 8.92004 17.2951 11.2961Z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>جزئیات حساب
+                        </li>
+                    </a>
+                    <a class="flex items-center no-underline flex-row-reverse  dark:text-white p-5 w-[90%] h-full"
+                        href="#">
+                        <li class="flex gap-2 flex-row-reverse">
+                            <svg class="dark:stroke-white stroke-[#3C3C3C]" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.2148 16.6947L24.9981 12.9114L21.2148 9.12817" stroke-width="2"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.86719 12.9107H24.8967" stroke-width="2" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M12.8227 24.6453C6.29064 24.6453 1 20.2118 1 12.8227C1 5.4335 6.29064 1 12.8227 1"
+                                    stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>خروج از حساب
+                        </li>
+                    </a>
+                    <div class="w-full h-[48px]"></div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Pop Up (show more..) -->
+    <section class="absolute sec-show-more transition-all duration-300 invisible opacity-0 flex-col w-full h-full top-0 right-0 justify-center items-center z-10">
+        <div class="show-more-cover w-full transition-all duration-1000 h-0 absolute top-0 right-0 z-20"></div>
+        <div
+            class="flex bg-white dark:bg-[#111827] shadow-[0px_0px_15px_0px_#00000033] relative z-30 flex-col w-4/5 sm:w-2/5 rounded-[50px]">
+            <div class="flex justify-between items-center flex-col md:flex-row rounded-[50px_50px_0px_0px] p-7 bg-[#56BF9E0D]">
+                <h3 class="font-medium text-[18px] lg:text-[25px] text-[#424242] dark:text-white text-right">سفارش های این تراکنش</h3>
+                <span class="font-medium text-[18px] lg:text-[25px] text-[#424242] dark:text-white">42 مورد</span>
+            </div>
+            <div class="p-5 flex flex-col gap-5">
+                <!-- The course buyed -->
+                <div class="flex p-2 shadow-[0px_0px_5px_0px_#00000026] flex-col justify-center items-center lg:flex-row bg-white dark:bg-[#111827] rounded-[15px]">
+                    <img class="w-full sm:w-[190px] md:h-[166px] rounded-[15px] object-cover" src="../assets/img/courses-cover.png"
+                        alt="SEO">
+                    <div class="flex flex-col mr-3 mt-2 w-full">
+                        <h3 class="font-semibold text-[#424242] dark:text-white text-[12px] md:text-[16px] text-nowrap">نقش و جایگاه
+                            حلقه‌‌های میانی در گسترش حجاب و عفاف</h3>
+                        <span
+                            class="info-course text-right 2xl:text-[16px] xl:text-[10px] lg:text-[11px] md:text-[12px] sm:text-[10px] text-[10px] flex items-center text-[#42548F] dark:text-[#ffffff] px-2 gap-1">
+                            <svg class="dark:stroke-white" xmlns="http://www.w3.org/2000/svg" stroke="#425791"
+                                width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path
+                                    d="M18.3327 14.7394V4.68105C18.3327 3.68105 17.516 2.93938 16.5243 3.02272H16.4743C14.7243 3.17272 12.066 4.06438 10.5827 4.99772L10.441 5.08938C10.1993 5.23938 9.79935 5.23938 9.55768 5.08938L9.34935 4.96438C7.86602 4.03938 5.21602 3.15605 3.46602 3.01438C2.47435 2.93105 1.66602 3.68105 1.66602 4.67272V14.7394C1.66602 15.5394 2.31602 16.2894 3.11602 16.3894L3.35768 16.4227C5.16602 16.6644 7.95768 17.581 9.55768 18.456L9.59102 18.4727C9.81602 18.5977 10.1743 18.5977 10.391 18.4727C11.991 17.5894 14.791 16.6644 16.6077 16.4227L16.8827 16.3894C17.6827 16.2894 18.3327 15.5394 18.3327 14.7394Z"
+                                    stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10 5.36438V17.8644" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M6.45898 7.86438H4.58398" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M7.08398 10.3644H4.58398" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                            مهارتی / مهارت‌های ارتباطی کنشگران حجاب...
+                        </span>
+                        <div
+                            class="teacher-course flex items-center justify-between mt-2 text-right 2xl:text-[16px] xl:text-[10px] lg:text-[11px] md:text-[12px] sm:text-[10px] text-[10px]">
+                            <span class="sub-info flex items-center text-[#42548F] dark:text-[#ffffff] px-2 gap-1">
+                                <svg class="dark:stroke-white" stroke="#794B89" xmlns="http://www.w3.org/2000/svg"
+                                    width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                    <path
+                                        d="M11.2869 9.4527C11.1964 9.44437 11.0879 9.44437 10.9883 9.4527C8.835 9.38603 7.125 7.76104 7.125 5.76104C7.125 3.71937 8.91643 2.06104 11.1421 2.06104C13.3588 2.06104 15.1593 3.71937 15.1593 5.76104C15.1502 7.76104 13.4402 9.38603 11.2869 9.4527Z"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M6.76324 12.528C4.57371 13.878 4.57371 16.078 6.76324 17.4197C9.25133 18.953 13.3318 18.953 15.8199 17.4197C18.0094 16.0697 18.0094 13.8697 15.8199 12.528C13.3409 11.003 9.26038 11.003 6.76324 12.528Z"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                استاد محمدعلی جعفری
+                            </span>
+                            <span class="sub-star flex items-center text-[#FFA135] gap-1">
+                                4.6
+                                <img src="./assets/img/star-svgrepo-icon.svg" alt="SEO">
+                            </span>
+                        </div>
+                        <div
+                            class="price-course flex items-center justify-between text-[#B9B9B9] mt-2 p-2 border-dashed-top">
+                            <span class="member-info flex items-center text-[10px] sm:text-[12px]">
+                                <svg class="dark:stroke-white" stroke="#B9B9B9" xmlns="http://www.w3.org/2000/svg"
+                                    width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path
+                                        d="M7.63314 9.84772C7.5498 9.83939 7.4498 9.83939 7.35814 9.84772C5.3748 9.78105 3.7998 8.15605 3.7998 6.15605C3.7998 4.11439 5.4498 2.45605 7.4998 2.45605C9.54147 2.45605 11.1998 4.11439 11.1998 6.15605C11.1915 8.15605 9.61647 9.78105 7.63314 9.84772Z"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M13.6747 4.12305C15.2914 4.12305 16.5914 5.43138 16.5914 7.03971C16.5914 8.61471 15.3414 9.89805 13.7831 9.95638C13.7164 9.94805 13.6414 9.94805 13.5664 9.95638"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M3.4666 12.923C1.44993 14.273 1.44993 16.473 3.4666 17.8147C5.75827 19.348 9.5166 19.348 11.8083 17.8147C13.8249 16.4647 13.8249 14.2647 11.8083 12.923C9.52494 11.398 5.7666 11.398 3.4666 12.923Z"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M15.2832 17.4561C15.8832 17.3311 16.4499 17.0894 16.9165 16.7311C18.2165 15.7561 18.2165 14.1477 16.9165 13.1727C16.4582 12.8227 15.8999 12.5894 15.3082 12.4561"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                236 عضو
+                            </span>
+                            <span class="price-info flex flex-col justify-center text-left">
+                                <span class="line-through text-[12px] lg:text-[14px]">750,000 تومن</span>
+                                <span class="text-[#189551] text-[14px] lg:text-[16px]">500,000 تومن</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex p-2 shadow-[0px_0px_5px_0px_#00000026] flex-col justify-center items-center lg:flex-row bg-white dark:bg-[#111827] rounded-[15px]">
+                    <img class="w-full sm:w-[190px] md:h-[166px] rounded-[15px] object-cover" src="../assets/img/courses-cover.png"
+                        alt="SEO">
+                    <div class="flex flex-col mr-3 mt-2 w-full">
+                        <h3 class="font-semibold text-[#424242] dark:text-white text-[12px] md:text-[16px] text-nowrap">نقش و جایگاه
+                            حلقه‌‌های میانی در گسترش حجاب و عفاف</h3>
+                        <span
+                            class="info-course text-right 2xl:text-[16px] xl:text-[10px] lg:text-[11px] md:text-[12px] sm:text-[10px] text-[10px] flex items-center text-[#42548F] dark:text-[#ffffff] px-2 gap-1">
+                            <svg class="dark:stroke-white" xmlns="http://www.w3.org/2000/svg" stroke="#425791"
+                                width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path
+                                    d="M18.3327 14.7394V4.68105C18.3327 3.68105 17.516 2.93938 16.5243 3.02272H16.4743C14.7243 3.17272 12.066 4.06438 10.5827 4.99772L10.441 5.08938C10.1993 5.23938 9.79935 5.23938 9.55768 5.08938L9.34935 4.96438C7.86602 4.03938 5.21602 3.15605 3.46602 3.01438C2.47435 2.93105 1.66602 3.68105 1.66602 4.67272V14.7394C1.66602 15.5394 2.31602 16.2894 3.11602 16.3894L3.35768 16.4227C5.16602 16.6644 7.95768 17.581 9.55768 18.456L9.59102 18.4727C9.81602 18.5977 10.1743 18.5977 10.391 18.4727C11.991 17.5894 14.791 16.6644 16.6077 16.4227L16.8827 16.3894C17.6827 16.2894 18.3327 15.5394 18.3327 14.7394Z"
+                                    stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10 5.36438V17.8644" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M6.45898 7.86438H4.58398" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M7.08398 10.3644H4.58398" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                            مهارتی / مهارت‌های ارتباطی کنشگران حجاب...
+                        </span>
+                        <div
+                            class="teacher-course flex items-center justify-between mt-2 text-right 2xl:text-[16px] xl:text-[10px] lg:text-[11px] md:text-[12px] sm:text-[10px] text-[10px]">
+                            <span class="sub-info flex items-center text-[#42548F] dark:text-[#ffffff] px-2 gap-1">
+                                <svg class="dark:stroke-white" stroke="#794B89" xmlns="http://www.w3.org/2000/svg"
+                                    width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                    <path
+                                        d="M11.2869 9.4527C11.1964 9.44437 11.0879 9.44437 10.9883 9.4527C8.835 9.38603 7.125 7.76104 7.125 5.76104C7.125 3.71937 8.91643 2.06104 11.1421 2.06104C13.3588 2.06104 15.1593 3.71937 15.1593 5.76104C15.1502 7.76104 13.4402 9.38603 11.2869 9.4527Z"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M6.76324 12.528C4.57371 13.878 4.57371 16.078 6.76324 17.4197C9.25133 18.953 13.3318 18.953 15.8199 17.4197C18.0094 16.0697 18.0094 13.8697 15.8199 12.528C13.3409 11.003 9.26038 11.003 6.76324 12.528Z"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                استاد محمدعلی جعفری
+                            </span>
+                            <span class="sub-star flex items-center text-[#FFA135] gap-1">
+                                4.6
+                                <img src="./assets/img/star-svgrepo-icon.svg" alt="SEO">
+                            </span>
+                        </div>
+                        <div
+                            class="price-course flex items-center justify-between text-[#B9B9B9] mt-2 p-2 border-dashed-top">
+                            <span class="member-info flex items-center text-[10px] sm:text-[12px]">
+                                <svg class="dark:stroke-white" stroke="#B9B9B9" xmlns="http://www.w3.org/2000/svg"
+                                    width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path
+                                        d="M7.63314 9.84772C7.5498 9.83939 7.4498 9.83939 7.35814 9.84772C5.3748 9.78105 3.7998 8.15605 3.7998 6.15605C3.7998 4.11439 5.4498 2.45605 7.4998 2.45605C9.54147 2.45605 11.1998 4.11439 11.1998 6.15605C11.1915 8.15605 9.61647 9.78105 7.63314 9.84772Z"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M13.6747 4.12305C15.2914 4.12305 16.5914 5.43138 16.5914 7.03971C16.5914 8.61471 15.3414 9.89805 13.7831 9.95638C13.7164 9.94805 13.6414 9.94805 13.5664 9.95638"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M3.4666 12.923C1.44993 14.273 1.44993 16.473 3.4666 17.8147C5.75827 19.348 9.5166 19.348 11.8083 17.8147C13.8249 16.4647 13.8249 14.2647 11.8083 12.923C9.52494 11.398 5.7666 11.398 3.4666 12.923Z"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M15.2832 17.4561C15.8832 17.3311 16.4499 17.0894 16.9165 16.7311C18.2165 15.7561 18.2165 14.1477 16.9165 13.1727C16.4582 12.8227 15.8999 12.5894 15.3082 12.4561"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                236 عضو
+                            </span>
+                            <span class="price-info flex flex-col justify-center text-left">
+                                <span class="line-through text-[12px] lg:text-[14px]">750,000 تومن</span>
+                                <span class="text-[#189551] text-[14px] lg:text-[16px]">500,000 تومن</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-btn-show-more w-full flex justify-center items-center cursor-pointer">
+                    <span class="bg-[#8484841A] py-2 px-4 rounded-lg">بستن</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="w-full lg:w-3/4 md:h-screen bg-[#F3F4F6] mx-2 md:mt-0 mt-20 dark:bg-[#202736] shadow-[0px_0px_8px_0px_#0000000D_inset] rounded-[50px] p-5">
+        <div class="flex flex-col">
+            <!-- Tool bar on top -->
+            <div class="flex justify-between flex-col sm:flex-row items-center">
+                <span class="text-[#424242] dark:text-[#9c9c9c]">محسن قادری عزیز؛ خوش اومدی 🙌
+                </span>
+                <div class="flex gap-4">
+                    <div class="flex justify-center items-center">
+                        <svg class=" stroke-[#64748B]" width="50" height="50" viewBox="0 0 60 60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="30" fill="white" />
+                            <path
+                                d="M30.0066 16.2702C25.4674 16.2702 21.7784 19.9591 21.7784 24.4983V28.4616C21.7784 29.2981 21.4219 30.5735 20.9967 31.2866L19.4197 33.9059C18.446 35.5241 19.118 37.3205 20.9007 37.9239C26.8113 39.8987 33.1881 39.8987 39.0987 37.9239C40.758 37.3754 41.4848 35.4144 40.5797 33.9059L39.0027 31.2866C38.5913 30.5735 38.2347 29.2981 38.2347 28.4616V24.4983C38.2347 19.9729 34.532 16.2702 30.0066 16.2702Z"
+                                stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path
+                                d="M32.5428 16.6679C32.1177 16.5444 31.6788 16.4484 31.2263 16.3936C29.9098 16.229 28.6481 16.325 27.4688 16.6679C27.8664 15.653 28.8538 14.9399 30.0058 14.9399C31.1577 14.9399 32.1451 15.653 32.5428 16.6679Z"
+                                stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M34.1227 38.4177C34.1227 40.6805 32.2713 42.5318 30.0086 42.5318C28.8841 42.5318 27.8419 42.0655 27.1013 41.325C26.3608 40.5845 25.8945 39.5422 25.8945 38.4177"
+                                stroke-width="2" stroke-miterlimit="10" />
+                        </svg>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <svg width="50" height="50" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="30" fill="white" />
+                            <path
+                                d="M18.0337 30.5066C18.4797 36.685 23.8944 41.7117 30.3747 41.9877C34.9468 42.1796 39.0357 40.1161 41.489 36.865C42.505 35.5333 41.9599 34.6455 40.2623 34.9455C39.4322 35.0894 38.5772 35.1494 37.6851 35.1134C31.6261 34.8735 26.6699 29.9667 26.6451 24.1722C26.6327 22.6126 26.9673 21.137 27.5744 19.7934C28.2435 18.3057 27.4381 17.5979 25.8893 18.2338C20.9826 20.2372 17.6248 25.024 18.0337 30.5066Z"
+                                stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <svg width="50" height="50" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="30" fill="white" />
+                            <path
+                                d="M23.832 23.7639V22.4338C23.832 19.3483 26.3141 16.3177 29.3995 16.0298C33.0746 15.6732 36.1738 18.5667 36.1738 22.1732V24.0656"
+                                stroke="#64748B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M25.8861 43.4145H34.1139C39.6265 43.4145 40.6139 41.2067 40.9019 38.519L41.9303 30.2912C42.3006 26.9452 41.3407 24.2163 35.4852 24.2163H24.5148C18.6593 24.2163 17.6994 26.9452 18.0697 30.2912L19.0981 38.519C19.3861 41.2067 20.3735 43.4145 25.8861 43.4145Z"
+                                stroke="#64748B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M34.7953 29.7018H34.8076" stroke="#64748B" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M25.1937 29.7017H25.2061" stroke="#64748B" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <svg width="50" height="50" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="30" fill="white" />
+                            <path
+                                d="M29.9389 28.3064C29.7776 28.2903 29.584 28.2903 29.4066 28.3064C25.5679 28.1774 22.5195 25.0323 22.5195 21.1613C22.5195 17.2097 25.7131 14 29.6808 14C33.6324 14 36.8421 17.2097 36.8421 21.1613C36.826 25.0323 33.7776 28.1774 29.9389 28.3064Z"
+                                stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M21.9274 34.2577C18.0242 36.8706 18.0242 41.1286 21.9274 43.7254C26.3629 46.6932 33.6371 46.6932 38.0726 43.7254C41.9758 41.1125 41.9758 36.8544 38.0726 34.2577C33.6532 31.3061 26.379 31.3061 21.9274 34.2577Z"
+                                stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- information inventory account -->
+            <div class="flex justify-center sm:justify-start items-center flex-wrap gap-3 mt-10">
+                <div class="flex w-[220px] bg-[#F3CB52] gap-3 p-2 justify-start items-center rounded-xl">
+                    <div class="flex items-center justify-center p-2 rounded-xl bg-[#FFDC71B2] h-[60px] w-[60px]">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M28.3412 21.5005C27.6293 22.1954 27.2225 23.1955 27.3242 24.2634C27.4767 26.0941 29.1548 27.4332 30.9855 27.4332H34.2061V29.4503C34.2061 32.9591 31.3415 35.8237 27.8327 35.8237H8.37342C4.86465 35.8237 2 32.9591 2 29.4503V18.0426C2 14.5338 4.86465 11.6692 8.37342 11.6692H27.8327C31.3415 11.6692 34.2061 14.5338 34.2061 18.0426V20.4835H30.7821C29.8328 20.4835 28.9684 20.8564 28.3412 21.5005Z"
+                                stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M2 19.5683V11.8219C2 9.80481 3.23739 8.00797 5.11891 7.29605L18.5777 2.21088C20.6795 1.4142 22.934 2.9737 22.934 5.22813V11.6693"
+                                stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M35.9988 22.2128V25.7047C35.9988 26.637 35.253 27.3997 34.3038 27.4336H30.9815C29.1508 27.4336 27.4727 26.0945 27.3202 24.2638C27.2184 23.1959 27.6253 22.1959 28.3372 21.5009C28.9644 20.8568 29.8288 20.4839 30.7781 20.4839H34.3038C35.253 20.5178 35.9988 21.2805 35.9988 22.2128Z"
+                                stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.62891 18.873H21.4943" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="flex justify-center gap-1 flex-col text-white">
+                        <span class="text-[14px]">مجموع پرداخت ها</span>
+                        <span class="text-[14px]">۹۸,۳۹۰,۵۶۷ تومان</span>
+                    </div>
+                </div>
+                <div class="flex w-[220px] bg-[#56BF9E] gap-3 p-2 justify-start items-center rounded-xl">
+                    <div class="flex items-center justify-center p-2 rounded-xl bg-[#68D4B3B2] h-[60px] w-[60px]">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.3438 22.9607C13.3438 25.1537 15.0268 26.9217 17.1178 26.9217H21.3847C23.2037 26.9217 24.6827 25.3747 24.6827 23.4707C24.6827 21.3967 23.7818 20.6657 22.4388 20.1897L15.5877 17.8097C14.2447 17.3337 13.3438 16.6027 13.3438 14.5287C13.3438 12.6247 14.8227 11.0777 16.6417 11.0777H20.9087C22.9997 11.0777 24.6827 12.8457 24.6827 15.0387"
+                                stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M19 8.8V29.2" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M19 36C28.3888 36 36 28.3888 36 19C36 9.61116 28.3888 2 19 2C9.61116 2 2 9.61116 2 19C2 28.3888 9.61116 36 19 36Z"
+                                stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="flex justify-center gap-1 flex-col text-white">
+                        <span class="text-[14px]">موجودی حساب</span>
+                        <span class="text-[14px]">۴۳,۳۲۶,۹۸۲ تومان</span>
+                    </div>
+                </div>
+            </div>
+            <!--tickets section -->
+            <div class="flex justify-center items-start mt-10 w-full">
+                <!-- Last tickets -->
+                <div class="flex justify-center flex-col items-start w-full gap-5">
+                    <div class="flex flex-col w-full p-2">
+                        <div
+                            class="flex justify-between items-center w-full p-3 rounded-[15px_15px_0px_0px] bg-[#EBB02E0D]">
+                            <h3 class="text-[14px] md:text-[18px] font-medium text-[#424242] dark:text-[#F3F4F6]">سفارش
+                                ها
+                            </h3>
+                        </div>
+                        <!-- Tickets -->
+                        <div
+                            class="flex relative items-start flex-col w-full  rounded-[0px_0px_15px_15px] bg-white dark:bg-[#111827] mt-[1px]">
+                            <!-- This is for "not found" any tickets. to enable item, clear "hidden" class -->
+                            <div
+                                class="flex w-full right-0 h-full hidden rounded-[0px_0px_15px_15px] justify-center items-center absolute top-0 bg-white dark:bg-[#111827] z-10">
+                                <span>سفارشی یافت نشد!</span>
+                            </div>
+                            <div class="flex w-full justify-between items-center mt-3 p-3">
+                                <div class="flex items-center justify-center gap-3">
+                                    <a href="#"
+                                        class="text-[#424242] no-underline dark:text-[#dadada] font-light text-[12px] sm:text-[16px]">#۵۴۰۰۰۲
+                                    </a>
+                                    <span class="mr-6 text-[10px] md:text-[16px]">500,000 تومان</span>
+                                </div>
+                                <div class="flex items-center justify-center gap-3">
+                                    <span
+                                        class="text-[12px] sm:text-[14px] text-[#B6B6B6] font-normal">۱۴۰۳٫۰۴٫۱۴</span>
+                                    <div
+                                        class="grid grid-cols-1 md:grid-cols-2 justify-items-center md:justify-items-end gap-2">
+                                        <div
+                                            class="p-1 bg-[#EBB02E0D] text-[14px] flex justify-center w-[100px] font-light text-[#EBB02E] text-center rounded-lg">
+                                            در انتظار پرداخت
+                                        </div>
+                                        <button
+                                            class="show-more p-1 bg-[#5040991A] flex cursor-pointer flex-row-reverse font-[dana] border-none justify-center items-center gap-2 text-[14px] font-light text-[#512B82] text-center w-[100px] md:w-[75px] rounded-lg" onclick="showmore()">
+                                            جزئیات
+                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.5596 6.92337C10.5596 8.33982 9.41502 9.48443 7.99856 9.48443C6.58211 9.48443 5.4375 8.33982 5.4375 6.92337C5.4375 5.50691 6.58211 4.3623 7.99856 4.3623C9.41502 4.3623 10.5596 5.50691 10.5596 6.92337Z"
+                                                    stroke="#512B82" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M8 12.8396C10.5253 12.8396 12.8789 11.3516 14.5171 8.77619C15.161 7.7675 15.161 6.07205 14.5171 5.06336C12.8789 2.48799 10.5253 1 8 1C5.47471 1 3.1211 2.48799 1.48288 5.06336C0.839039 6.07205 0.839039 7.7675 1.48288 8.77619C3.1211 11.3516 5.47471 12.8396 8 12.8396Z"
+                                                    stroke="#512B82" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex w-full justify-between items-center mt-3 p-3 bg-[#56BF9E0D]">
+                                <div class="flex items-center justify-center gap-3">
+                                    <a href="#"
+                                        class="text-[#424242] no-underline dark:text-[#dadada] font-light text-[12px] sm:text-[16px]">#۵۴۰۰۰۲
+                                    </a>
+                                    <span class="mr-6 text-[10px] text-[#189551] md:text-[16px]">500,000 تومان</span>
+                                </div>
+                                <div class="flex items-center justify-center gap-3">
+                                    <span
+                                        class="text-[12px] sm:text-[14px] text-[#B6B6B6] font-normal">۱۴۰۳٫۰۴٫۱۴</span>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 md:justify-items-end gap-2">
+                                        <div
+                                            class="p-1 bg-[#56BF9E12] flex justify-center w-[100px] text-[14px] font-light text-[#56BF9E] text-center rounded-lg">
+                                            تراکنش موفق
+                                        </div>
+                                        <button
+                                            class="show-more p-1 show-more bg-[#5040991A] flex cursor-pointer flex-row-reverse font-[dana] border-none justify-center items-center gap-2 text-[14px] font-light text-[#512B82] text-center w-[100px] md:w-[75px] rounded-lg" onclick="showmore()">
+                                            جزئیات
+                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.5596 6.92337C10.5596 8.33982 9.41502 9.48443 7.99856 9.48443C6.58211 9.48443 5.4375 8.33982 5.4375 6.92337C5.4375 5.50691 6.58211 4.3623 7.99856 4.3623C9.41502 4.3623 10.5596 5.50691 10.5596 6.92337Z"
+                                                    stroke="#512B82" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M8 12.8396C10.5253 12.8396 12.8789 11.3516 14.5171 8.77619C15.161 7.7675 15.161 6.07205 14.5171 5.06336C12.8789 2.48799 10.5253 1 8 1C5.47471 1 3.1211 2.48799 1.48288 5.06336C0.839039 6.07205 0.839039 7.7675 1.48288 8.77619C3.1211 11.3516 5.47471 12.8396 8 12.8396Z"
+                                                    stroke="#512B82" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex w-full justify-between items-center mt-3 p-3">
+                                <div class="flex items-center justify-center gap-3">
+                                    <a href="#"
+                                        class="text-[#424242] no-underline dark:text-[#dadada] font-light text-[12px] sm:text-[16px]">#۵۴۰۰۰۲
+                                    </a>
+                                    <span class="mr-6 text-[10px] text-[#FA7070] md:text-[16px]">500,000 تومان</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="text-[12px] sm:text-[14px] text-[#B6B6B6] font-normal">۱۴۰۳٫۰۴٫۱۴</span>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 md:justify-items-end gap-2">
+                                        <div
+                                            class="p-1 bg-[#FA707012] flex justify-center w-[100px] text-[14px] font-light text-[#FA7070] text-center rounded-lg">
+                                            تراکنش ناموفق
+                                        </div>
+                                        <button
+                                            class="show-more p-1 bg-[#5040991A] flex cursor-pointer flex-row-reverse font-[dana] border-none justify-center items-center gap-2 text-[14px] font-light text-[#512B82] text-center w-[100px] md:w-[75px] rounded-lg" onclick="showmore()">
+                                            جزئیات
+                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.5596 6.92337C10.5596 8.33982 9.41502 9.48443 7.99856 9.48443C6.58211 9.48443 5.4375 8.33982 5.4375 6.92337C5.4375 5.50691 6.58211 4.3623 7.99856 4.3623C9.41502 4.3623 10.5596 5.50691 10.5596 6.92337Z"
+                                                    stroke="#512B82" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M8 12.8396C10.5253 12.8396 12.8789 11.3516 14.5171 8.77619C15.161 7.7675 15.161 6.07205 14.5171 5.06336C12.8789 2.48799 10.5253 1 8 1C5.47471 1 3.1211 2.48799 1.48288 5.06336C0.839039 6.07205 0.839039 7.7675 1.48288 8.77619C3.1211 11.3516 5.47471 12.8396 8 12.8396Z"
+                                                    stroke="#512B82" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

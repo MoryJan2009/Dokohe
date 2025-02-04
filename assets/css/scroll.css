@@ -1,0 +1,32 @@
+:root {
+    /* For Lessons And Articles Pages In Aside */
+    --theme-aside: #512b82;
+    --theme-aside-hover: #693ba5b3;
+    /* For popup-cart Page */
+    --theme-popup-cart: #257e6cb5;
+    --theme-popup-cart: #257e6c68;
+ }
+ 
+ /* width */
+ ::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+    background: var(--theme-aside);
+    border-radius: 5px;
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-aside-hover);
+ }
+ 
